@@ -13,4 +13,7 @@
 +(void) adjustPoints:(int) delta;
 
 +(int) totalPoints;
+
++(NSArray*) recentPointsValues;
+
 @end

@@ -53,6 +53,8 @@
 		669980FA15712A6600C5CA7A /* VCSaveOrCrave.m in Sources */ = {isa = PBXBuildFile; fileRef = 669980F915712A6600C5CA7A /* VCSaveOrCrave.m */; };
 		669980FE15712A7100C5CA7A /* VCFoodChoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 669980FD15712A7100C5CA7A /* VCFoodChoice.m */; };
 		6699810115712A8E00C5CA7A /* VCPointsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699810015712A8E00C5CA7A /* VCPointsStatus.m */; };
+		66E2B18215725B6E00E24F59 /* VCGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E2B18115725B6E00E24F59 /* VCGraph.m */; };
+		66E2B18615725B8300E24F59 /* VCustomGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E2B18515725B8300E24F59 /* VCustomGraph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +117,10 @@
 		669980FD15712A7100C5CA7A /* VCFoodChoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFoodChoice.m; sourceTree = "<group>"; };
 		669980FF15712A8E00C5CA7A /* VCPointsStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPointsStatus.h; sourceTree = "<group>"; };
 		6699810015712A8E00C5CA7A /* VCPointsStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPointsStatus.m; sourceTree = "<group>"; };
+		66E2B18015725B6E00E24F59 /* VCGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCGraph.h; sourceTree = "<group>"; };
+		66E2B18115725B6E00E24F59 /* VCGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCGraph.m; sourceTree = "<group>"; };
+		66E2B18415725B8300E24F59 /* VCustomGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCustomGraph.h; sourceTree = "<group>"; };
+		66E2B18515725B8300E24F59 /* VCustomGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCustomGraph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +300,10 @@
 				662E6D96157244C000EDBAB4 /* VCSecretControls.h */,
 				662E6D97157244C000EDBAB4 /* VCSecretControls.m */,
 				662E6D98157244C100EDBAB4 /* VCSecretControls.xib */,
+				66E2B18015725B6E00E24F59 /* VCGraph.h */,
+				66E2B18115725B6E00E24F59 /* VCGraph.m */,
+				66E2B18415725B8300E24F59 /* VCustomGraph.h */,
+				66E2B18515725B8300E24F59 /* VCustomGraph.m */,
 				662E6D9B157247DB00EDBAB4 /* Data.h */,
 				662E6D9C157247DB00EDBAB4 /* Data.m */,
 			);
@@ -403,6 +413,8 @@
 				662E6D94157243C800EDBAB4 /* VCDefaults.m in Sources */,
 				662E6D99157244C100EDBAB4 /* VCSecretControls.m in Sources */,
 				662E6D9D157247DB00EDBAB4 /* Data.m in Sources */,
+				66E2B18215725B6E00E24F59 /* VCGraph.m in Sources */,
+				66E2B18615725B8300E24F59 /* VCustomGraph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

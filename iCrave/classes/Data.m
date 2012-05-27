@@ -13,11 +13,19 @@
 @implementation Data
 
 static int totalPoints;
+static NSMutableArray* recentPoints;
 
-+(void) load
-{
-	NSUserDefaults* d = [NSUserDefaults standardUserDefaults];
-	totalPoints = [d integerForKey:kTotalPoints];
++ (void) initialize {
+	if ([self class] == [Data class]) {
+		// Once-only initialization
+		
+		NSUserDefaults* d = [NSUserDefaults standardUserDefaults];
+		totalPoints = [d integerForKey:kTotalPoints];
+		
+		recentPoints = [NSMutableArray new];
+		[recentPoints addObject:[NSNumber numberWithInt:totalPoints]];
+	}
+	// Initialization for this class and any subclasses
 }
 
 +(void) adjustPoints:(int) delta
@@ -27,11 +35,18 @@ static int totalPoints;
 	NSUserDefaults *d = [NSUserDefaults standardUserDefaults];
 	[d setInteger:totalPoints forKey:kTotalPoints];
 	[d synchronize];
+	
+	[recentPoints addObject:[NSNumber numberWithInt:totalPoints]];
 }
 
 +(int) totalPoints
 {
 	return totalPoints;
+}
+
++(NSArray*) recentPointsValues
+{
+	return recentPoints;
 }
 
 @end

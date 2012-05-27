@@ -1,23 +1,20 @@
 //
-//  VCPointsLost.m
+//  VCGraph.m
 //  iCrave
 //
-//  Created by adam applecansuckmybigtodger on 26/05/2012.
+//  Created by adam applecansuckmybigtodger on 27/05/2012.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "VCPointsLost.h"
+#import "VCGraph.h"
 
-#import "Data.h"
-
-
-@interface VCPointsLost ()
+@interface VCGraph ()
 
 @end
 
-@implementation VCPointsLost
+@implementation VCGraph
 
-@synthesize lTotalPoints;
+@synthesize graph;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,8 +29,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-	
-	self.lTotalPoints.font = [UIFont fontWithName:@"VAGRoundedStd-Bold" size:30];
 }
 
 - (void)viewDidUnload
@@ -42,10 +37,9 @@
     // Release any retained subviews of the main view.
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)tappedDone:(id)sender
 {
-	[Data adjustPoints:-10];
-	self.lTotalPoints.text = [NSString stringWithFormat:@"%i", [Data totalPoints]];
+	[self dismissModalViewControllerAnimated:TRUE];
 }
 
 @end
